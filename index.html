@@ -1,118 +1,71 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Darshan Resume</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#f4f7fc;font-family:'Segoe UI',sans-serif;padding:30px}
-.resume-card{max-width:1100px;margin:auto;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.15)}
-.resume-header{display:flex;justify-content:space-between;align-items:center;padding:25px 35px;border-bottom:1px solid #eee}
-.resume-header h1{color:#0b1e33}
-.btn{padding:12px 22px;border-radius:40px;text-decoration:none;border:none;cursor:pointer;font-weight:600}
-.view{background:#eef3ff}
-.download{background:#173d72;color:#fff}
-.resume-body{padding:35px}
-.resume-preview{background:#fafcff;border:1px solid #e5edf7;border-radius:20px;padding:35px}
-h2{font-size:38px;color:#0b1e33}
-.title{color:#2a6df4;font-size:20px;margin:8px 0 20px;border-bottom:2px solid #e7eef9;padding-bottom:10px}
-.contact{display:flex;flex-wrap:wrap;gap:25px;background:#eef5ff;padding:14px 18px;border-radius:40px;margin-bottom:30px}
-.contact span i{color:#2a6df4;margin-right:6px}
-.grid{display:grid;grid-template-columns:1fr 2fr;gap:35px}
-.section{margin-bottom:28px}
-.section h3{border-bottom:2px solid #dfe8f4;padding-bottom:8px;margin-bottom:15px;color:#0b1e33}
-.section ul{list-style:none}
-.section li{margin-bottom:10px;line-height:1.5}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{background:#e8f1ff;padding:6px 12px;border-radius:30px;font-size:13px}
-.job{margin-bottom:18px}
-@media(max-width:768px){.grid{grid-template-columns:1fr}.contact{border-radius:16px}}
-</style>
-</head>
-<body>
-<div class="resume-card">
-<div class="resume-header">
-<h1><i class="fas fa-file-user"></i> Resume</h1>
-<div>
-<button class="btn view" onclick="document.querySelector('.resume-preview').scrollIntoView({behavior:'smooth'})"><i class="fas fa-eye"></i> View</button>
-<button class="btn download" onclick="window.print()"><i class="fas fa-download"></i> Download</button>
-</div>
-</div>
-
-<div class="resume-body">
-<div class="resume-preview">
-<h2>DARSHAN MANJUNATH MUTAGOND</h2>
-<div class="title">B.E. CSE Student | Cybersecurity Enthusiast | Ethical Hacking | Network Security | Web Security</div>
-
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Segoe UI,Arial,sans-serif;background:#e9eef5;padding:30px}
+.page{max-width:900px;margin:auto;background:#fff;box-shadow:0 10px 35px rgba(0,0,0,.18);padding:32px 42px}
+h1{text-align:center;font-size:42px;letter-spacing:1px}
+.contact{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;border-bottom:2px solid #222;padding:12px 0 16px;margin-bottom:18px;font-size:15px}
+.contact i{margin-right:6px}
+section{margin-top:12px}
+h2{font-size:28px;letter-spacing:2px;border-top:2px solid #222;border-bottom:2px solid #222;padding:4px 0;margin-bottom:10px}
+p,li{font-size:18px;line-height:1.55;color:#222}
+.edu{display:flex;justify-content:space-between;margin-bottom:10px}
+.edu b{font-size:18px}
+.skills b{display:inline}
+.tags{display:flex;flex-wrap:wrap;gap:18px;font-size:18px;padding-top:8px}
+.cert li{margin-left:22px}
+.project{margin-bottom:12px}
+@media print{body{background:#fff;padding:0}.page{box-shadow:none;max-width:100%;padding:22px}}
+</style></head>
+<body><div class="page">
+<h1>DARSHAN MANJUNATH MUTAGOND</h1>
 <div class="contact">
-<span><i class="fas fa-phone"></i> +91 8088906424</span>
-<span><i class="fas fa-envelope"></i> darshamutagond123@gmail.com</span>
-<span><i class="fab fa-linkedin"></i> darshan-mutagond-17n</span>
-<span><i class="fas fa-map-marker-alt"></i> Saundatti, Belagavi</span>
+<span><i class="fa fa-phone"></i>+91 8088906424</span>
+<span><i class="fa fa-envelope"></i>darshamutagond123@gmail.com</span>
+<span><i class="fab fa-linkedin"></i>darshan-mutagond-17n</span>
+<span><i class="fa fa-location-dot"></i>Saundatti, Belagavi</span>
 </div>
 
-<div class="grid">
-<div>
-<div class="section">
-<h3>Education</h3>
-<ul>
-<li><b>B.E. CSE (ICB)</b><br>Alvas Institute of Engineering and Technology<br>CGPA: 8.12 (2023–Present)</li>
-<li><b>PUC</b><br>Chetan PU College, Hubli – 76%</li>
-<li><b>SSLC</b><br>KLE Society's CBSE School – 64%</li>
+<section><h2>ABOUT ME</h2>
+<p>I am a highly motivated and detail-oriented Software Engineering student with a strong foundation in programming, networking and cybersecurity. I have hands-on experience with Nmap, Wireshark and Burp Suite through practical labs on TryHackMe. I am eager to continuously improve my technical skills and contribute to real-world cybersecurity and software development projects.</p>
+</section>
+
+<section><h2>EDUCATION</h2>
+<div class="edu"><div><b>B.E. in CSE (ICB)</b><br>Alvas Institute of Engineering and Technology, Moodbidri<br>CGPA: 8.12</div><b>2023–Present</b></div>
+<div class="edu"><div><b>PUC</b><br>Chetan PU College, Hubli<br>76%</div><b>2021–2023</b></div>
+<div class="edu"><div><b>SSLC</b><br>KLE Society's CBSE School, Saundatti<br>64%</div><b>2020</b></div>
+</section>
+
+<section><h2>TECHNICAL SKILLS</h2>
+<p><b>Programming:</b> Python (Basics), C</p>
+<p><b>Networking:</b> TCP/IP, DNS, OSI Model, HTTP/HTTPS, IP Addressing, Subnetting, Network Troubleshooting</p>
+<p><b>Cybersecurity Tools:</b> Nmap, Wireshark, Burp Suite, Metasploit, SQLMap, John the Ripper, Hydra</p>
+<p><b>Operating Systems:</b> Kali Linux, Windows, Linux Command Line</p>
+<p><b>Web Security:</b> OWASP Top 10, SQL Injection, XSS, CSRF, Authentication & Session Security</p>
+<p><b>Security Concepts:</b> Network Scanning, Vulnerability Assessment, Packet Analysis, Malware Analysis, Zero Trust, Penetration Testing, Endpoint Security</p>
+</section>
+
+<section><h2>PROJECTS</h2>
+<div class="project"><b>Real-Time IoT Network Monitoring and Threat Detection System</b><br>Developed a system to monitor IoT network traffic in real time and detect security threats using packet analysis and anomaly detection.</div>
+<div class="project"><b>Zero Trust Security Model</b><br>Implemented the "Never Trust, Always Verify" principle with authentication, authorization and least-privilege access.</div>
+<div class="project"><b>IoT-Based Biometric Attendance System</b><br>Built an IoT-enabled biometric attendance system for secure and automated attendance tracking.</div>
+<div class="project"><b>Keylog Analysis Framework</b><br>Developed a Python-based framework for keyboard event analysis to demonstrate endpoint monitoring and malware analysis.</div>
+</section>
+
+<section><h2>SKILLS</h2>
+<div class="tags"><span>Adaptive</span><span>Punctuation</span><span>Teamwork</span><span>Time Management</span><span>Leadership</span><span>Effective Communication</span></div>
+</section>
+
+<section><h2>CERTIFICATIONS</h2>
+<ul class="cert">
+<li>NPTEL – Internet Crimes and Cybersecurity</li>
+<li>Certified Ethical Hacker (CEH) Specialization</li>
+<li>Google Assured Cybersecurity Professional Certificate</li>
+<li>Deloitte Australia Cyber Job Simulation on Forage</li>
+<li>Rajya Puraskar in Scouts and Guides</li>
+<li>AIR-1 in Mega Quiz by OHSSAI Foundation</li>
 </ul>
-</div>
-
-<div class="section">
-<h3>Skills</h3>
-<div class="tags">
-<span class="tag">Python</span><span class="tag">C</span><span class="tag">Kali Linux</span>
-<span class="tag">Nmap</span><span class="tag">Wireshark</span>
-<span class="tag">Burp Suite</span><span class="tag">Metasploit</span>
-<span class="tag">SQLMap</span><span class="tag">Networking</span>
-<span class="tag">OWASP</span><span class="tag">Zero Trust</span>
-</div>
-</div>
-
-<div class="section">
-<h3>Certifications</h3>
-<ul>
-<li>NPTEL Internet Crimes & Cybersecurity</li>
-<li>CEH Specialization</li>
-<li>Google Cybersecurity Professional</li>
-<li>Deloitte Cyber Job Simulation</li>
-<li>Rajya Puraskar</li>
-<li>AIR-1 Mega Quiz (OHSSAI)</li>
-</ul>
-</div>
-</div>
-
-<div>
-<div class="section">
-<h3>About Me</h3>
-<p>I am a highly motivated Software Engineering student with strong knowledge of programming, networking and cybersecurity. I have hands-on experience with Nmap, Wireshark and Burp Suite through practical labs and enjoy learning ethical hacking and security analysis.</p>
-</div>
-
-<div class="section">
-<h3>Projects</h3>
-<div class="job"><b>Real-Time IoT Network Monitoring and Threat Detection System</b><br>Real-time packet monitoring and anomaly detection.</div>
-<div class="job"><b>Zero Trust Security Model</b><br>Implemented authentication and least-privilege access.</div>
-<div class="job"><b>IoT-Based Biometric Attendance System</b><br>Secure automated attendance using IoT.</div>
-<div class="job"><b>Keylog Analysis Framework</b><br>Python framework for endpoint monitoring and malware analysis.</div>
-</div>
-
-<div class="section">
-<h3>Technical Skills</h3>
-<p><b>Networking:</b> TCP/IP, DNS, OSI, HTTP/HTTPS, Subnetting</p>
-<p><b>Web Security:</b> OWASP Top 10, SQL Injection, XSS, CSRF</p>
-<p><b>Security:</b> Vulnerability Assessment, Malware Analysis, Packet Analysis, Penetration Testing</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+</section>
+</div></body></html>
